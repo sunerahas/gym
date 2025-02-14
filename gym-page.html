@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gym Landing Page</title>
+	<style>/* Reset default styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Style the navigation menu */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav li {
+            margin-right: 10px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        /* Style the hero section */
+        .hero {
+            background-image: url('gym-hero.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+        
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        
+        .hero button {
+            background-color: #fff;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        /* Style the about section */
+        .about {
+            background-color: #f2f2f2;
+            padding: 50px;
+            text-align: center;
+        }
+        
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        
+        .about p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+        
+        .about button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        /* Style the services section */
+        .services {
+            background-color: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+        
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        
+        .services ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .services li {
+            margin: 10px;
+        }
+        
+        .services li:before {
+            content: "";
+            background-image: url('gym-equipment.jpg');
+            background-size: cover;
+            display: block;
+            height: 150px;
+            width: 150px;
+            margin: 0 auto 10px;
+            border-radius: 50%;
+        }
+        
+        .services button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        /* Style the pricing section */
+        .pricing {
+            background-color: #f2f2f2;
+            padding: 50px;
+            text-align: center;
+        }
+        
+        .pricing h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        
+        .pricing table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        .pricing th, .pricing td {
+            padding: 10px;
+            border: 1px solid #333;
+        }
+        
+        .pricing th {
+            background-color: #333;
+            color: #fff;
+        }
+        
+        .pricing button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        /* Style the contact section */
+        .contact {
+            background-color: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        
+        .contact form
+        </style>
+</head>
+<body>
+	<header>
+		
+	</header>
+	
+	<main>
+		<section class="hero">
+			<h1>Welcome to [Gym Name]</h1>
+			<p>Get fit, stay healthy, and have fun with our state-of-the-art facilities and expert trainers.</p>
+			<button>Join Now</button>
+		</section>
+		
+		<section class="about">
+			<h2>About Us</h2>
+			<p>[Gym Name] is the premier destination for fitness enthusiasts in [Location]. Our mission is to provide top-notch facilities, equipment, and trainers to help you achieve your fitness goals.</p>
+			<button>Learn More</button>
+		</section>
+		
+		<section class="services">
+			<h2>Our Services</h2>
+			<ul>
+				<li>Personal Training</li>
+				<li>Group Fitness Classes</li>
+				<li>Cardio Equipment</li>
+				<li>Strength Training Equipment</li>
+				<li>Locker Rooms</li>
+			</ul>
+			
+		</section>
+		<!-- Pricing section with Join Now buttons -->
+<section class="pricing">
+  <h2>Our Pricing</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Plan</th>
+        <th>Price</th>
+        <th>Join Now</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Basic</td>
+        <td>$25/month</td>
+        <td><button onclick="location.href='payment-form.php?plan=basic'">Join Now</button></td>
+      </tr>
+      <tr>
+        <td>Pro</td>
+        <td>$50/month</td>
+        <td><button onclick="location.href='payment-form.php?plan=pro'">Join Now</button></td>
+      </tr>
+      <tr>
+        <td>Premium</td>
+        <td>$100/month</td>
+        <td><button onclick="location.href='payment-form.php?plan=premium'">Join Now</button></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+		
+		<section class="contact">
+			<h2>Contact Us</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea><br>
+
+				<button type="submit">Send Message</button>
+			</form>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 [Gym Name]. All rights reserved.</p>
+	</footer>
+</body>
+</html>

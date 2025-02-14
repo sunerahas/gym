@@ -1,0 +1,99 @@
+<html>
+<head>
+  <style>
+    body {
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 50px 0 30px;
+    }
+
+    .gym-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .gym-card {
+      width: calc(33.33% - 20px);
+      background-color: #FFC107;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      box-sizing: border-box;
+    }
+
+    .gym-card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .gym-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    .gym-type {
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .gym-location {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .explore-button {
+      display: inline-block;
+      background-color: #000;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    .explore-button:hover {
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gyms in Vikhroli</h1>
+  <div class="gym-list">
+    <div class="gym-card" id="gym1">
+      <div class="gym-name">Gold's Gym</div>
+      <div class="gym-type">Strength and Cardio</div>
+      <div class="gym-location">Vikhroli West, Mumbai</div>
+      <a class="explore-button" href="#">Explore</a>
+    </div>
+    <div class="gym-card" id="gym2">
+      <div class="gym-name">Talwalkars Gym</div>
+      <div class="gym-type">Strength and Cardio</div>
+      <div class="gym-location">Vikhroli East, Mumbai</div>
+      <a class="explore-button" href="#">Explore</a>
+    </div>
+    <div class="gym-card" id="gym3">
+      <div class="gym-name">Snap Fitness</div>
+      <div class="gym-type">Strength and Cardio</div>
+      <div class="gym-location">Hiranandani Gardens, Vikhroli</div>
+      <a class="explore-button" href="#">Explore</a>
+    </div>
+  </div>
+  <script>
+    // Add more gyms here if needed
+  </script>
+</body>

@@ -1,0 +1,71 @@
+/* common body element css for every page*/
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+article {
+  margin: auto 0;
+}
+/* Style the navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+    border-radius: 15px;
+  }
+
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the Login/Register button */
+  .login-register {
+    float: right;
+  }
+  .login-register a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .login-register a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* style the logo img */
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    height: 50px;
+    padding: 1%;
+  }
+
+  footer {
+    background-color: #fdfcfc;
+    color: #090000;
+    padding: 10px;
+    text-align: center;
+ 
+  }
+  
+  footer p {
+    margin: 0;
+  }
